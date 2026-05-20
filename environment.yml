@@ -1,0 +1,11 @@
+name: memory-agent
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pip:
+      - openai>=1.30.0
+      - sentence-transformers
+      - faiss-cpu

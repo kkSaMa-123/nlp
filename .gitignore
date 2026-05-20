@@ -1,0 +1,52 @@
+# macOS / editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and local secrets
+.env
+.env.*
+env.sh
+*.local
+
+# Conda / virtualenv folders
+.venv/
+venv/
+env/
+
+# Downloaded datasets and caches
+.locomo_cache/
+cache/
+models/
+
+# Eval sets generated from LoCoMo
+eval_kit/eval_set*.json
+!eval_kit/eval_set_small.json
+
+# Experiment outputs
+experiments/logs/
+experiments/results/*.json
+
+# Keep human-written summaries and placeholders in results
+!experiments/results/*.md
+!experiments/results/.gitkeep
+
+# Large model / binary artifacts
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+
+# Temporary files
+*.tmp
+*.log
