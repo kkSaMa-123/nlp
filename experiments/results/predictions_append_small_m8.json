@@ -1,0 +1,82 @@
+[
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Caroline went to a transgender conference in July (Session 5 @ 1:36 pm on 3 July, 2023).",
+    "error": null,
+    "latency_sec": 1.035
+  },
+  {
+    "qa_id": "conv-30_q33",
+    "question": "When did Jon visit networking events for his store?",
+    "reference": "20 June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon visited networking events yesterday (20 June 2023) as mentioned in Session 16 @ 2:15 pm on 21 June, 2023. He said it was tough but he was staying determined and focused then.",
+    "error": null,
+    "latency_sec": 1.349
+  },
+  {
+    "qa_id": "conv-41_q94",
+    "question": "What kind of food did Maria have on her dinner spread iwth her mother?",
+    "reference": "Salads, sandwiches, homemade desserts",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.704
+  },
+  {
+    "qa_id": "conv-43_q4",
+    "question": "What books has Tim read?",
+    "reference": "Harry Potter, Game of Thrones, the Name of the Wind, The Alchemist, The Hobbit, A Dance with Dragons, and the Wheel of Time.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Tim has read 'The Name of the Wind' by Patrick Rothfuss, 'A Dance with Dragons' by George R. R. Martin, and an inspiring series about the power of friendship and loyalty.",
+    "error": null,
+    "latency_sec": 1.163
+  },
+  {
+    "qa_id": "conv-43_q15",
+    "question": "Who is Anthony?",
+    "reference": "likely John's friend, colleague or family",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.82
+  },
+  {
+    "qa_id": "conv-43_q29",
+    "question": "What schools did John play basketball in and how many years was he with his team during high school?",
+    "reference": "Middle school, high school, and college and he was with his high school team for 4 years.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.646
+  },
+  {
+    "qa_id": "conv-50_q39",
+    "question": "Would Dave prefer working on a Dodge Charger or a Subaru Forester?",
+    "reference": "Dodge Charger",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.909
+  },
+  {
+    "qa_id": "conv-50_q71",
+    "question": "How long did Calvin plan to stay in Japan?",
+    "reference": "A few months",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.662
+  }
+]

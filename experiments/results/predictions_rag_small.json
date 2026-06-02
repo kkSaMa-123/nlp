@@ -1,0 +1,82 @@
+[
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Two days ago.",
+    "error": null,
+    "latency_sec": 0.8
+  },
+  {
+    "qa_id": "conv-30_q33",
+    "question": "When did Jon visit networking events for his store?",
+    "reference": "20 June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon visited networking events on 21 June, 2023.",
+    "error": null,
+    "latency_sec": 0.624
+  },
+  {
+    "qa_id": "conv-41_q94",
+    "question": "What kind of food did Maria have on her dinner spread iwth her mother?",
+    "reference": "Salads, sandwiches, homemade desserts",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Maria and her mom made some dinner together, including salads, sandwiches, and homemade desserts.",
+    "error": null,
+    "latency_sec": 0.749
+  },
+  {
+    "qa_id": "conv-43_q4",
+    "question": "What books has Tim read?",
+    "reference": "Harry Potter, Game of Thrones, the Name of the Wind, The Alchemist, The Hobbit, A Dance with Dragons, and the Wheel of Time.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Tim is currently reading \"The Name of the Wind\" by Patrick Rothfuss and has a collection of fantasy books that take him to different worlds. He also mentions enjoying the GoT series.",
+    "error": null,
+    "latency_sec": 0.847
+  },
+  {
+    "qa_id": "conv-43_q15",
+    "question": "Who is Anthony?",
+    "reference": "likely John's friend, colleague or family",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Anthony is the super-nerd in Harry Potter trivia contest that John and Tim went to.",
+    "error": null,
+    "latency_sec": 0.83
+  },
+  {
+    "qa_id": "conv-43_q29",
+    "question": "What schools did John play basketball in and how many years was he with his team during high school?",
+    "reference": "Middle school, high school, and college and he was with his high school team for 4 years.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John played basketball in local leagues as a kid and in high school for four years with his teammates.",
+    "error": null,
+    "latency_sec": 0.841
+  },
+  {
+    "qa_id": "conv-50_q39",
+    "question": "Would Dave prefer working on a Dodge Charger or a Subaru Forester?",
+    "reference": "Dodge Charger",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.593
+  },
+  {
+    "qa_id": "conv-50_q71",
+    "question": "How long did Calvin plan to stay in Japan?",
+    "reference": "A few months",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.566
+  }
+]

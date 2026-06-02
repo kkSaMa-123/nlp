@@ -1,0 +1,122 @@
+[
+  {
+    "qa_id": "conv-26_q27",
+    "category_name": "multi_hop",
+    "question": "Would Caroline pursue writing as a career option?",
+    "reference": "LIkely no; though she likes reading, she wants to be a counselor",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the information provided in the reference answer.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-26_q30",
+    "category_name": "multi_hop",
+    "question": "Would Melanie be considered a member of the LGBTQ community?",
+    "reference": "Likely no, she does not refer to herself as part of it",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the information provided in the reference answer.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-26_q77",
+    "category_name": "multi_hop",
+    "question": "Would Melanie go on another roadtrip soon?",
+    "reference": "Likely no; since this one went badly",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the information provided in the reference answer.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q23",
+    "category_name": "single_hop",
+    "question": "Which of Joanna's screenplay were rejected from production companies?",
+    "reference": "first screenplay on drama and romance, third screenplay on loss identity and connection",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the specific information provided in the reference answer about which scripts were rejected.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q60",
+    "category_name": "multi_hop",
+    "question": "What Console does Nate own?",
+    "reference": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any information about the console Nate owns.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q64",
+    "category_name": "temporal",
+    "question": "When did Nate win a big Valorant tourney?",
+    "reference": "The Saturday before 7November, 2022",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' directly corresponds to the reference's specific date information.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q84",
+    "category_name": "multi_hop",
+    "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+    "reference": "No; because both of them faced setbacks in their career",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the information provided in the reference answer.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-43_q112",
+    "category_name": "open_domain",
+    "question": "What was the setting for John and his wife's first dance?",
+    "reference": "Cozy restaurant",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any information related to the reference answer 'Cozy restaurant'.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-43_q149",
+    "category_name": "open_domain",
+    "question": "What book did Tim just finish reading on 8th December, 2023?",
+    "reference": "\"A Dance with Dragons\"",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' matches the reference's indication that Tim did not finish a specific book.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-43_q37",
+    "category_name": "temporal",
+    "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+    "reference": "The week before October 13th, 2023.",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not convey any information related to the reference date or week.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  }
+]

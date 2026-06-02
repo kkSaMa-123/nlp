@@ -1,0 +1,402 @@
+[
+  {
+    "qa_id": "conv-26_q11",
+    "question": "Where did Caroline move from 4 years ago?",
+    "reference": "Sweden",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Caroline moved from her home country, Sweden 4 years ago.",
+    "error": null,
+    "latency_sec": 27.473
+  },
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Last Friday, Caroline went to an LGBTQ+ counseling workshop where she talked about different therapeutic methods and how to best work with trans people. She then attended an LGBTQ conference which was really special and motivating. The exact date is not specified in the conversation, only that it happened \"a few weeks ago.\"",
+    "error": null,
+    "latency_sec": 1.238
+  },
+  {
+    "qa_id": "conv-26_q27",
+    "question": "Would Caroline pursue writing as a career option?",
+    "reference": "LIkely no; though she likes reading, she wants to be a counselor",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.239
+  },
+  {
+    "qa_id": "conv-26_q30",
+    "question": "Would Melanie be considered a member of the LGBTQ community?",
+    "reference": "Likely no, she does not refer to herself as part of it",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Unknown\n\nBased on the conversation, Melanie identifies as part of the LGBTQ+ community by supporting her LGBTQ+ friend Caroline in her adoption journey and attending an LGBTQ+ poetry reading. However, to definitively state that she is explicitly a member of the LGBTQ community based solely on this conversation would be speculative.",
+    "error": null,
+    "latency_sec": 1.206
+  },
+  {
+    "qa_id": "conv-26_q77",
+    "question": "Would Melanie go on another roadtrip soon?",
+    "reference": "Likely no; since this one went badly",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.228
+  },
+  {
+    "qa_id": "conv-30_q12",
+    "question": "When did Jon start to go to the gym?",
+    "reference": "March, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon started to go to the gym last week, as mentioned in Session 1 where Gina says \"I just started hitting the gym last week to stay on track with the venture.\"",
+    "error": null,
+    "latency_sec": 19.735
+  },
+  {
+    "qa_id": "conv-30_q22",
+    "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+    "reference": "June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Gina developed a video presentation to teach how to style her fashion pieces after she had an interview for a design internship.",
+    "error": null,
+    "latency_sec": 0.534
+  },
+  {
+    "qa_id": "conv-30_q33",
+    "question": "When did Jon visit networking events for his store?",
+    "reference": "20 June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon visited networking events yesterday (21 June).",
+    "error": null,
+    "latency_sec": 0.342
+  },
+  {
+    "qa_id": "conv-30_q61",
+    "question": "What did Gina receive from a dance contest?",
+    "reference": "a trophy",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Gina received a trophy from a dance contest.",
+    "error": null,
+    "latency_sec": 0.359
+  },
+  {
+    "qa_id": "conv-30_q66",
+    "question": "What is Jon offering to the dancers at his dance studio?",
+    "reference": "One-on-one mentoring and training",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Jon is offering to offer one-on-one mentoring and training to help dancers reach their full potential.",
+    "error": null,
+    "latency_sec": 0.52
+  },
+  {
+    "qa_id": "conv-30_q71",
+    "question": "How does Gina describe the studio that Jon has opened?",
+    "reference": "amazing",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The studio that Jon has opened is described as a go-to spot for self-expression.",
+    "error": null,
+    "latency_sec": 0.47
+  },
+  {
+    "qa_id": "conv-41_q22",
+    "question": "When did John go to a convention with colleagues?",
+    "reference": "March 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Last month",
+    "error": null,
+    "latency_sec": 30.696
+  },
+  {
+    "qa_id": "conv-42_q23",
+    "question": "Which of Joanna's screenplay were rejected from production companies?",
+    "reference": "first screenplay on drama and romance, third screenplay on loss identity and connection",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "One of Joanna's screenplay submissions was rejected from a production company.",
+    "error": null,
+    "latency_sec": 27.934
+  },
+  {
+    "qa_id": "conv-42_q30",
+    "question": "What kind of writings does Joanna do?",
+    "reference": "Screenplays,books, online blog posts, journal",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Joanna writes scripts for movies and suspenseful thrillers. She also writes a movie script that turned into a movie.",
+    "error": null,
+    "latency_sec": 0.647
+  },
+  {
+    "qa_id": "conv-42_q37",
+    "question": "When did Nate win an international tournament?",
+    "reference": "21 August, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate won his fourth video game tournament internationally.",
+    "error": null,
+    "latency_sec": 0.397
+  },
+  {
+    "qa_id": "conv-42_q60",
+    "question": "What Console does Nate own?",
+    "reference": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The conversation does not contain information about the console that Nate owns.",
+    "error": null,
+    "latency_sec": 0.43
+  },
+  {
+    "qa_id": "conv-42_q64",
+    "question": "When did Nate win a big Valorant tourney?",
+    "reference": "The Saturday before 7November, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Crazy thing happened - I was in the final of a big Valorant tournament last Saturday, and I won!",
+    "error": null,
+    "latency_sec": 0.617
+  },
+  {
+    "qa_id": "conv-42_q68",
+    "question": "How many hikes has Joanna been on?",
+    "reference": "Four",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The conversation does not specify how many hikes Joanna has been on.",
+    "error": null,
+    "latency_sec": 0.433
+  },
+  {
+    "qa_id": "conv-42_q84",
+    "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+    "reference": "No; because both of them faced setbacks in their career",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 0.255
+  },
+  {
+    "qa_id": "conv-42_q108",
+    "question": "How does Nate describe the process of taking care of turtles?",
+    "reference": "Not tough; keep their area clean, feed them properly, give them enough light.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Taking care of them brings Nate peace in the craziness of life and they don't require much looking after, which is great. He loves seeing them soak in the sun.",
+    "error": null,
+    "latency_sec": 0.784
+  },
+  {
+    "qa_id": "conv-43_q1",
+    "question": "What are John's goals for his career that are not related to his basketball skills?",
+    "reference": "get endorsements, build his brand, do charity work",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John's career goals not related to his basketball skills include focusing on better shooting, making more of an impact on the court, and building a brand through endorsements. He also wants to use his platform to make a positive difference and inspire others by potentially starting a foundation and doing charity work.",
+    "error": null,
+    "latency_sec": 28.606
+  },
+  {
+    "qa_id": "conv-43_q37",
+    "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+    "reference": "The week before October 13th, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.228
+  },
+  {
+    "qa_id": "conv-43_q104",
+    "question": "What spice did John add to the soup for flavor?",
+    "reference": "sage",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John added sage to the soup for flavor.",
+    "error": null,
+    "latency_sec": 0.384
+  },
+  {
+    "qa_id": "conv-43_q112",
+    "question": "What was the setting for John and his wife's first dance?",
+    "reference": "Cozy restaurant",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The first dance at a cozy restaurant.",
+    "error": null,
+    "latency_sec": 0.335
+  },
+  {
+    "qa_id": "conv-43_q127",
+    "question": "What hobby is a therapy for John when away from the court?",
+    "reference": "Cooking",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Cooking is a therapy for John when away from the court.",
+    "error": null,
+    "latency_sec": 0.419
+  },
+  {
+    "qa_id": "conv-43_q149",
+    "question": "What book did Tim just finish reading on 8th December, 2023?",
+    "reference": "\"A Dance with Dragons\"",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "\"A Dance with Dragons\"",
+    "error": null,
+    "latency_sec": 0.301
+  },
+  {
+    "qa_id": "conv-44_q2",
+    "question": "What kind of indoor activities has Andrew pursued with his girlfriend?",
+    "reference": "boardgames, volunteering at pet shelter, wine tasting, growing flowers",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Unknown",
+    "error": null,
+    "latency_sec": 27.853
+  },
+  {
+    "qa_id": "conv-47_q5",
+    "question": "What are John and James' favorite games?",
+    "reference": "John's favorite game is CS:GO, and James's is Apex Legends.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John likes playing Fortnite, Apex Legends, FIFA 23, and organizing gaming tournaments. James enjoys playing Cyberpunk 2077 and Witcher 3. He also loves RPGs and is excited about creating his own strategy game in the future.",
+    "error": null,
+    "latency_sec": 26.002
+  },
+  {
+    "qa_id": "conv-47_q6",
+    "question": "Does James live in Connecticut?",
+    "reference": "Likely yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 0.225
+  },
+  {
+    "qa_id": "conv-47_q36",
+    "question": "Who is Jill?",
+    "reference": "Most likely John's partner.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jill is John's girlfriend, as James mentions buying souvenirs for her.",
+    "error": null,
+    "latency_sec": 0.471
+  },
+  {
+    "qa_id": "conv-48_q36",
+    "question": "How old is Jolene?",
+    "reference": "likely no more than 30; since she's in school",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Unknown",
+    "error": null,
+    "latency_sec": 25.525
+  },
+  {
+    "qa_id": "conv-48_q128",
+    "question": "What album does Deborah recommend for meditation and deep relaxation?",
+    "reference": "'Sleep'",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The album Deborah recommends for meditation and deep relaxation is 'Sleep'.",
+    "error": null,
+    "latency_sec": 0.44
+  },
+  {
+    "qa_id": "conv-49_q1",
+    "question": "What kinds of things did Evan have broken?",
+    "reference": "His old Prius and his new Prius.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "The conversation does not mention anything about Evan having things broken.",
+    "error": null,
+    "latency_sec": 28.877
+  },
+  {
+    "qa_id": "conv-49_q3",
+    "question": "How many Prius has Evan owned?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 0.243
+  },
+  {
+    "qa_id": "conv-49_q10",
+    "question": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
+    "reference": "camping trip in the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Camping trip in the outdoors",
+    "error": null,
+    "latency_sec": 0.325
+  },
+  {
+    "qa_id": "conv-49_q32",
+    "question": "What recurring frustration does Evan experience?",
+    "reference": "Evan consistently misplaces his keys every week.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan experiences issues with self-checkout machines at the supermarket.",
+    "error": null,
+    "latency_sec": 0.444
+  },
+  {
+    "qa_id": "conv-49_q66",
+    "question": "When did Evan lose his job?",
+    "reference": "end of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "It's not specified when exactly Evan lost his job. It happened since he mentioned it was a bit of a rough patch and the company downsized recently.",
+    "error": null,
+    "latency_sec": 0.738
+  },
+  {
+    "qa_id": "conv-50_q34",
+    "question": "When did Dave return from San Francisco?",
+    "reference": "September 1, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Dave returned from San Francisco last week, as he mentioned having attended a car workshop there recently.",
+    "error": null,
+    "latency_sec": 35.37
+  },
+  {
+    "qa_id": "conv-50_q63",
+    "question": "What style of guitars does Calvin own?",
+    "reference": "custom-made yellow guitar with an octopus on it, shiny purple guitar",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Unknown",
+    "error": null,
+    "latency_sec": 0.268
+  },
+  {
+    "qa_id": "conv-50_q98",
+    "question": "How did the audience in Tokyo react when Calvin sang one of his songs?",
+    "reference": "Everyone was so into it and sang along",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The crowd had such a buzz and were so into it when Calvin sang one of his songs, with everyone feeling connected.",
+    "error": null,
+    "latency_sec": 0.65
+  }
+]

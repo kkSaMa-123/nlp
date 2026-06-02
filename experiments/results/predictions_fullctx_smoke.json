@@ -1,0 +1,12 @@
+[
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Last Friday, Caroline went to an LGBTQ+ counseling workshop where she talked about different therapeutic methods and how to best work with trans people. She then attended an LGBTQ conference that was really special and motivating. The exact date is not specified in the conversation.",
+    "error": null,
+    "latency_sec": 27.659
+  }
+]

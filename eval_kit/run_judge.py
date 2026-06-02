@@ -70,6 +70,10 @@ Respond with JSON only, no other text:
 LABEL_SCORE = {"CORRECT": 1.0, "PARTIAL": 0.5, "WRONG": 0.0}
 
 
+def is_judge_call_failure(item: dict) -> bool:
+    return str(item.get("judge_reasoning", "")).startswith("judge_call_failed:")
+
+
 def parse_judge_output(text: str) -> dict:
     """从 Judge 的输出中提取 JSON，尽量兼容常见的格式问题（code fence、额外文本、大小写等）。"""
     if not text:
@@ -198,6 +202,8 @@ def main():
         if label_key in by_cat[name]:
             by_cat[name][label_key] += 1
 
+    judge_failures = sum(1 for g in graded if is_judge_call_failure(g))
+
     # 取均值
     for name, d in by_cat.items():
         d["score"] = round(d["score"] / d["n"], 4)
@@ -219,6 +225,7 @@ def main():
         "by_category": dict(by_cat),
         "judge_model": client.model,
         "predictions_file": args.predictions,
+        "judge_failures": judge_failures,
         "graded": graded,
     }
     with open(args.output, "w") as f:
@@ -236,6 +243,11 @@ def main():
     print(f"{'总体':<14}{overall['n']:>5}{overall['score']:>9.3f}"
           f"{overall['f1']:>9.3f}{overall['em']:>9.3f}")
     print(f"\n平均回答耗时：{overall['avg_latency_sec']}s")
+    if judge_failures:
+        print(
+            f"\n[警告] Judge 调用失败 {judge_failures}/{len(graded)} 条。"
+            "这些条目被兜底判为 WRONG，本次 Judge Score 不可作为正式结果。"
+        )
     print(f"结果已保存 -> {args.output}")
 
 

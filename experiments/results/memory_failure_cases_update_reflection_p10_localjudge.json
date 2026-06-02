@@ -1,0 +1,222 @@
+[
+  {
+    "qa_id": "conv-26_q27",
+    "category_name": "multi_hop",
+    "question": "Would Caroline pursue writing as a career option?",
+    "reference": "LIkely no; though she likes reading, she wants to be a counselor",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the information provided in the reference answer.",
+    "f1": 0.0,
+    "likely_error_stage": "写入或检索失败：模型回答 unknown，需检查 top memories 是否含答案",
+    "log_file": "experiments/logs/reflection_agent_1780385807_4303446336.jsonl",
+    "top_retrieved_memories": [
+      {
+        "score": 0.7818945646286011,
+        "type": "fact",
+        "date_time": "1:56 pm on 8 May, 2023",
+        "text": "Caroline plans to continue her education and explore career options in counseling or mental health."
+      },
+      {
+        "score": 0.6716340780258179,
+        "type": "fact",
+        "date_time": "4:33 pm on 12 July, 2023",
+        "text": "Melanie said: Wow, Caroline. We've come so far, but there's more to do. Your drive to help is awesome! What's your plan to pitch in?"
+      },
+      {
+        "score": 0.6690728664398193,
+        "type": "fact",
+        "date_time": "8:18 pm on 6 July, 2023",
+        "text": "Caroline said: Since our last chat, I've been looking into counseling or mental health work more. I'm passionate about helping people and making a positive impact. It's tough, but really rewarding too. Anything new happening with you?; Caroline mentioned this concrete detail: Since our last chat, I've been looking into counseling or mental health work more. I'm passionate about helping people and making a positive impact. It's tough, but really rewarding too. Anything new happening with you?"
+      },
+      {
+        "score": 0.6645235419273376,
+        "type": "fact",
+        "date_time": "12:09 am on 13 September, 2023",
+        "text": "Caroline has created art since she was 17."
+      },
+      {
+        "score": 0.6595270037651062,
+        "type": "fact",
+        "date_time": "1:36 pm on 3 July, 2023",
+        "text": "Caroline has learned the piano as a creative outlet."
+      }
+    ]
+  },
+  {
+    "qa_id": "conv-26_q30",
+    "category_name": "multi_hop",
+    "question": "Would Melanie be considered a member of the LGBTQ community?",
+    "reference": "Likely no, she does not refer to herself as part of it",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the information provided in the reference answer.",
+    "f1": 0.0,
+    "likely_error_stage": "写入或检索失败：模型回答 unknown，需检查 top memories 是否含答案",
+    "log_file": "experiments/logs/reflection_agent_1780385807_4303446336.jsonl",
+    "top_retrieved_memories": [
+      {
+        "score": 0.7483170032501221,
+        "type": "detail",
+        "date_time": "2:31 pm on 17 July, 2023",
+        "text": "Caroline mentioned this concrete detail: Hey Melanie! That sounds great! Last weekend I joined a mentorship program for LGBTQ youth - it's really rewarding to help the community."
+      },
+      {
+        "score": 0.7271576523780823,
+        "type": "detail",
+        "date_time": "1:36 pm on 3 July, 2023",
+        "text": "Melanie mentioned this concrete detail: Wow, Caroline, sounds like the parade was an awesome experience! It's great to see the love and support for the LGBTQ+ community. Congrats! Has this experience influenced your goals at all?"
+      },
+      {
+        "score": 0.7210304737091064,
+        "type": "detail",
+        "date_time": "7:55 pm on 9 June, 2023",
+        "text": "Melanie mentioned this concrete detail: Hey Caroline! Great to hear from you. Sounds like your event was amazing! I'm so proud of you for spreading awareness and getting others involved in the LGBTQ community. You've come a long way since your transition - keep on inspiring people with your strength and courage!"
+      },
+      {
+        "score": 0.7201387882232666,
+        "type": "fact",
+        "date_time": "8:56 pm on 20 July, 2023",
+        "text": "Caroline said: Thanks, Melanie! It's awesome to have our own platform to be ourselves and support others' rights. Our group, 'Connected LGBTQ Activists', is made of all kinds of people investing in positive changes. We have regular meetings, plan events and campaigns, to get together and support each other; Caroline mentioned this concrete detail: Thanks, Melanie! It's awesome to have our own platform to be ourselves and support others' rights. Our group, 'Connected LGBTQ Activists', is made of all kinds of people investing in positive changes. We have regular meetings, plan events and campaigns, to get together and support each other."
+      },
+      {
+        "score": 0.7117387056350708,
+        "type": "fact",
+        "date_time": "8:56 pm on 20 July, 2023",
+        "text": "Caroline said: Hey Mel! A lot's happened since we last chatted - I just joined a new LGBTQ activist group last Tues. I'm meeting so many cool people who are as passionate as I am about rights and community support. I'm giving my voice and making a real difference, plus it's fulfilling in so many ways. It's just great, you know?; Caroline mentioned this concrete detail: Hey Mel! A lot's happened since we last chatted - I just joined a new LGBTQ activist group last Tues. I'm meeting so many cool people who are as passionate as I am about rights and community support. I'm giving my voice and making a real difference, plus it's fulfilling in so many ways. It's just great, you know?"
+      }
+    ]
+  },
+  {
+    "qa_id": "conv-26_q77",
+    "category_name": "multi_hop",
+    "question": "Would Melanie go on another roadtrip soon?",
+    "reference": "Likely no; since this one went badly",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the information provided in the reference answer.",
+    "f1": 0.0,
+    "likely_error_stage": "写入或检索失败：模型回答 unknown，需检查 top memories 是否含答案",
+    "log_file": "experiments/logs/reflection_agent_1780385807_4303446336.jsonl",
+    "top_retrieved_memories": [
+      {
+        "score": 0.6975300908088684,
+        "type": "fact",
+        "date_time": "6:55 pm on 20 October, 2023",
+        "text": "Melanie said: Hey Caroline, that roadtrip this past weekend was insane! We were all freaked when my son got into an accident. We were so lucky he was okay. It was a real scary experience. Thankfully it's over now. What's been up since we last talked?"
+      },
+      {
+        "score": 0.6846239566802979,
+        "type": "fact",
+        "date_time": "8:18 pm on 6 July, 2023",
+        "text": "Melanie said: Hey Caroline! Missed you. Anything new? Spill the beans!"
+      },
+      {
+        "score": 0.6666193604469299,
+        "type": "fact",
+        "date_time": "4:33 pm on 12 July, 2023",
+        "text": "Melanie said: Wow, Caroline. We've come so far, but there's more to do. Your drive to help is awesome! What's your plan to pitch in?"
+      },
+      {
+        "score": 0.6507338285446167,
+        "type": "fact",
+        "date_time": "8:56 pm on 20 July, 2023",
+        "text": "Melanie said: Hey Caroline! Good to talk to you again. What's up? Anything new since last time?"
+      },
+      {
+        "score": 0.6493854522705078,
+        "type": "fact",
+        "date_time": "3:19 pm on 28 August, 2023",
+        "text": "Melanie said: Hey Caroline! Since we last spoke, I took my kids to a park yesterday. They had fun exploring and playing. It was nice seeing them have a good time outdoors. Time flies, huh? What's new with you?; Melanie mentioned this concrete detail: Hey Caroline! Since we last spoke, I took my kids to a park yesterday. They had fun exploring and playing. It was nice seeing them have a good time outdoors. Time flies, huh? What's new with you?"
+      }
+    ]
+  },
+  {
+    "qa_id": "conv-42_q23",
+    "category_name": "single_hop",
+    "question": "Which of Joanna's screenplay were rejected from production companies?",
+    "reference": "first screenplay on drama and romance, third screenplay on loss identity and connection",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any of the specific information provided in the reference answer about which scripts were rejected.",
+    "f1": 0.0,
+    "likely_error_stage": "写入或检索失败：模型回答 unknown，需检查 top memories 是否含答案",
+    "log_file": "experiments/logs/reflection_agent_1780386295_16713158848.jsonl",
+    "top_retrieved_memories": [
+      {
+        "score": 0.7177017331123352,
+        "type": "fact",
+        "date_time": "5:44 pm on 3 June, 2022",
+        "text": "Joanna said: Nate, after finishing my screenplay I got a rejection letter from a major company. It really bummed me out."
+      },
+      {
+        "score": 0.6449642777442932,
+        "type": "fact",
+        "date_time": "1:07 pm on 25 February, 2022",
+        "text": "Joanna is writing a screenplay about a thirty-year-old woman on a journey of self-discovery after a loss."
+      },
+      {
+        "score": 0.6422449350357056,
+        "type": "fact",
+        "date_time": "10:55 am on 24 June, 2022",
+        "text": "Joanna said: Hey Nate, long time no see! How have you been? I just got done submitting my recent screenplay to a film contest just to see how others might like it!"
+      },
+      {
+        "score": 0.6303087472915649,
+        "type": "detail",
+        "date_time": "2:01 pm on 21 October, 2022",
+        "text": "Nate mentioned this concrete detail: Bummer, Joanna. Is this the one you sent to a film contest? Rejections suck, but don't forget they don't define you. Keep at it and you'll find the perfect opportunity."
+      },
+      {
+        "score": 0.629054069519043,
+        "type": "detail",
+        "date_time": "12:06 am on 11 November, 2022",
+        "text": "Nate mentioned this concrete detail: Congrats, Joanna! Not surprised at all that your hard work paid off. Must feel awesome to see your script come alive in a movie! Pretty cool when something you love brings success, right? Tell me more about your movie!"
+      }
+    ]
+  },
+  {
+    "qa_id": "conv-42_q60",
+    "category_name": "multi_hop",
+    "question": "What Console does Nate own?",
+    "reference": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The predicted answer 'unknown' does not capture any information about the console Nate owns.",
+    "f1": 0.0,
+    "likely_error_stage": "写入或检索失败：模型回答 unknown，需检查 top memories 是否含答案",
+    "log_file": "experiments/logs/reflection_agent_1780386295_16713158848.jsonl",
+    "top_retrieved_memories": [
+      {
+        "score": 0.7184796333312988,
+        "type": "fact",
+        "date_time": "1:43 pm on 24 March, 2022",
+        "text": "Nate has participated in the video game tournament again."
+      },
+      {
+        "score": 0.7082542777061462,
+        "type": "fact",
+        "date_time": "5:54 pm on 9 November, 2022",
+        "text": "Nate prefers making gaming content for YouTube as a way to entertain and connect with others who enjoy gaming."
+      },
+      {
+        "score": 0.6974818706512451,
+        "type": "fact",
+        "date_time": "8:16 pm on 25 October, 2022",
+        "text": "Nate said: Congrats Joanna! How was it to finally see it on the big screen?\n\n[shares a photo holding a videogame controller]"
+      },
+      {
+        "score": 0.6884219646453857,
+        "type": "fact",
+        "date_time": "11:54 am on 2 May, 2022",
+        "text": "Joanna said: Wow, Nate! I'm proud of what you did. Your gaming room looks great - have you been gaming a lot recently?"
+      },
+      {
+        "score": 0.6697578430175781,
+        "type": "fact",
+        "date_time": "7:31 pm on 21 January, 2022",
+        "text": "Nate prefers action and sci-fi movies."
+      }
+    ]
+  }
+]

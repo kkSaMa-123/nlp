@@ -1,0 +1,68 @@
+{
+  "note": "Local development results. Local qwen2.5:3b judge is for reference; final grading should use DeepSeek or DashScope if API key is available.",
+  "model": {
+    "generation": "qwen2.5:3b via local Ollama",
+    "local_judge": "qwen2.5:3b via local Ollama"
+  },
+  "eval_sets": {
+    "small": {
+      "path": "eval_kit/eval_set_small.json",
+      "num_questions": 8
+    },
+    "p10": {
+      "path": "eval_kit/eval_set_p10.json",
+      "per_category": 10,
+      "num_questions": 40
+    }
+  },
+  "p10_predictions": {
+    "no_memory": "experiments/results/predictions_nomem_p10.json",
+    "full_context": "experiments/results/predictions_fullctx_p10.json",
+    "raw_turn_rag": "experiments/results/predictions_rag_p10.json",
+    "update_reflection": "experiments/results/predictions_update_reflection_p10.json"
+  },
+  "p10_local_judge": {
+    "no_memory": "experiments/results/results_nomem_p10_localjudge.json",
+    "full_context": "experiments/results/results_fullctx_p10_localjudge.json",
+    "raw_turn_rag": "experiments/results/results_rag_p10_localjudge.json",
+    "update_reflection": "experiments/results/results_update_reflection_p10_localjudge.json"
+  },
+  "prompt_ablations": {
+    "update_reflection_small_allow_inference": {
+      "prediction_file": "experiments/results/predictions_update_reflection_small_infer.json",
+      "MEMORY_ALLOW_INFERENCE": 1,
+      "note": "Small-set ablation. Reduces unknown answers from 4 to 3, but rough F1 drops from 0.289 to 0.275, so it is not the main p10 configuration."
+    }
+  },
+  "bad_cases": {
+    "update_reflection_p10_localjudge": "experiments/results/bad_cases_update_reflection_p10_localjudge.json",
+    "update_reflection_p10_memory_evidence_json": "experiments/results/memory_failure_cases_update_reflection_p10_localjudge.json",
+    "update_reflection_p10_memory_evidence_md": "experiments/results/memory_failure_cases_update_reflection_p10_localjudge.md"
+  },
+  "costs": {
+    "p10": "experiments/results/cost_summary_p10.json"
+  },
+  "agent_configs": {
+    "update_reflection": {
+      "agent": "memory_agent.agent.controller:UpdateReflectionAgent",
+      "MEMORY_PER_SESSION": 4,
+      "MEMORY_TOP_K": 10,
+      "MEMORY_DETAIL_NOTES": 1,
+      "MEMORY_DETAIL_NOTES_PER_SESSION": 3,
+      "MEMORY_UPDATE_USE_LLM": 0,
+      "MEMORY_REFLECTIONS": 6,
+      "MEMORY_REFLECTION_INPUTS": 120,
+      "MEMORY_ALLOW_INFERENCE": 0
+    }
+  },
+  "scripts": {
+    "run_small": "experiments/run_small_experiments.sh",
+    "run_p10": "experiments/run_p10_experiments.sh",
+    "run_p10_cloud_judge": "experiments/run_p10_cloud_judge.sh",
+    "project_eval_entry": "memory_agent/eval/run_eval.py",
+    "summarize": "experiments/summarize_predictions.py",
+    "cost_summary": "experiments/compute_costs.py",
+    "bad_case_extractor": "experiments/analyze_bad_cases.py",
+    "memory_failure_analyzer": "experiments/analyze_memory_failures.py"
+  }
+}

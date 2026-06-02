@@ -1,0 +1,122 @@
+[
+  {
+    "qa_id": "conv-26_q11",
+    "category_name": "single_hop",
+    "question": "Where did Caroline move from 4 years ago?",
+    "reference": "Sweden",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown' while the reference gives a specific location, so it is contradictory.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-26_q27",
+    "category_name": "multi_hop",
+    "question": "Would Caroline pursue writing as a career option?",
+    "reference": "LIkely no; though she likes reading, she wants to be a counselor",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown', but the reference gives a clear answer ('likely no'), so it is contradictory.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-26_q30",
+    "category_name": "multi_hop",
+    "question": "Would Melanie be considered a member of the LGBTQ community?",
+    "reference": "Likely no, she does not refer to herself as part of it",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown' while the reference says 'Likely no', which is contradictory.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-26_q77",
+    "category_name": "multi_hop",
+    "question": "Would Melanie go on another roadtrip soon?",
+    "reference": "Likely no; since this one went badly",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The reference says likely no, but the prediction says unknown, which is contradictory.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-41_q22",
+    "category_name": "temporal",
+    "question": "When did John go to a convention with colleagues?",
+    "reference": "March 2023",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown', which does not provide the date, so it is missing the key information.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q23",
+    "category_name": "single_hop",
+    "question": "Which of Joanna's screenplay were rejected from production companies?",
+    "reference": "first screenplay on drama and romance, third screenplay on loss identity and connection",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown', which is an 'I don't know' response and does not provide the specific information given in the reference, so it is wrong.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q60",
+    "category_name": "multi_hop",
+    "question": "What Console does Nate own?",
+    "reference": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown', which is equivalent to 'I don't know', while the reference provides a specific answer; thus it is WRONG.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q64",
+    "category_name": "temporal",
+    "question": "When did Nate win a big Valorant tourney?",
+    "reference": "The Saturday before 7November, 2022",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown', which is equivalent to an 'I don't know' response, while the reference provides a specific date; thus it is wrong.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q68",
+    "category_name": "multi_hop",
+    "question": "How many hikes has Joanna been on?",
+    "reference": "Four",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown' which is equivalent to 'I don't know', while the reference gives a definite answer 'Four', so it is contradictory and missing the key information.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  },
+  {
+    "qa_id": "conv-42_q84",
+    "category_name": "multi_hop",
+    "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+    "reference": "No; because both of them faced setbacks in their career",
+    "prediction": "unknown",
+    "judge_label": "WRONG",
+    "judge_reasoning": "The prediction says 'unknown' while the reference gives a definitive 'No', so it is incorrect.",
+    "f1": 0.0,
+    "likely_error_stage": "to_analyze",
+    "notes": ""
+  }
+]

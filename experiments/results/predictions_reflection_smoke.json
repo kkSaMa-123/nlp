@@ -1,0 +1,12 @@
+[
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Two days ago, which was on 10 July 2023.",
+    "error": null,
+    "latency_sec": 1.324
+  }
+]

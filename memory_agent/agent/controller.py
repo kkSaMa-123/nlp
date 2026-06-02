@@ -9,6 +9,8 @@ import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from memory_agent.memory.reflection import MemoryReflector
+from memory_agent.memory.retriever import MemoryRetriever
 from memory_agent.memory.store import MemoryStore
 from memory_agent.memory.updater import MemoryUpdater
 from memory_agent.memory.writer import MemoryWriter
@@ -45,12 +47,14 @@ class AppendOnlyMemoryAgent:
             top_k=int(os.getenv("MEMORY_TOP_K", "8")),
             keyword_weight=float(os.getenv("MEMORY_KEYWORD_WEIGHT", "0.0")),
         )
+        self.retriever = MemoryRetriever(self.store)
         self.writer = MemoryWriter(
             self.llm,
             max_memories_per_session=int(os.getenv("MEMORY_PER_SESSION", "8")),
             include_detail_notes=os.getenv("MEMORY_DETAIL_NOTES", "0") == "1",
             detail_notes_per_session=int(os.getenv("MEMORY_DETAIL_NOTES_PER_SESSION", "3")),
         )
+        self.allow_inference = os.getenv("MEMORY_ALLOW_INFERENCE", "0") == "1"
         self.last_retrieved: list[dict] = []
         self.log_dir = Path(os.getenv("MEMORY_LOG_DIR", "experiments/logs"))
         self.log_path = self.log_dir / f"append_agent_{int(time.time())}_{id(self)}.jsonl"
@@ -80,15 +84,23 @@ class AppendOnlyMemoryAgent:
         )
 
     def answer(self, question: str) -> str:
-        retrieved = self.store.search(question)
+        retrieved = self.retriever.retrieve(question)
         self.last_retrieved = retrieved
         context = self._format_memories(retrieved)
+        if self.allow_inference:
+            answer_policy = (
+                "If the memories give strong indirect evidence, make a cautious "
+                "inference using words like 'likely' or 'probably'. Reply 'unknown' "
+                "only when the memories have no relevant evidence."
+            )
+        else:
+            answer_policy = "If the memories do not contain the answer, reply 'unknown'."
         prompt = (
             "You are answering a question about a past conversation.\n"
             "Use only the extracted memories below. Keep the answer short, usually "
-            "a phrase or one sentence. If the memories do not contain the answer, "
-            "reply 'unknown'. For date questions, use the memory date when it helps "
-            "resolve relative time expressions like yesterday or last week.\n\n"
+            f"a phrase or one sentence. {answer_policy} "
+            "For date questions, use the memory date when it helps resolve relative "
+            "time expressions like yesterday or last week.\n\n"
             f"=== Extracted memories ===\n{context}\n\n"
             f"=== Question ===\n{question}\n\n"
             "=== Answer ==="
@@ -216,6 +228,58 @@ class UpdateMemoryAgent(AppendOnlyMemoryAgent):
                 "num_active_memories": active_count,
                 "num_obsolete_memories": obsolete_count,
                 "update_stats": self.updater.stats,
+                "update_events": self.updater.events,
+                "memories": self.store.memories,
+            }
+        )
+
+
+class UpdateReflectionAgent(UpdateMemoryAgent):
+    """Update-memory agent with a final reflection pass over active memories."""
+
+    def __init__(self):
+        super().__init__()
+        self.reflector = MemoryReflector(
+            self.llm,
+            max_reflections=int(os.getenv("MEMORY_REFLECTIONS", "8")),
+            max_input_memories=int(os.getenv("MEMORY_REFLECTION_INPUTS", "120")),
+        )
+        self.log_path = self.log_dir / f"reflection_agent_{int(time.time())}_{id(self)}.jsonl"
+
+    def ingest(self, conversation: dict) -> None:
+        speaker_a = conversation.get("speaker_a", "")
+        speaker_b = conversation.get("speaker_b", "")
+        extracted = []
+        for session in conversation.get("sessions", []):
+            session_memories = self.writer.extract_session_memories(
+                session,
+                speaker_a=speaker_a,
+                speaker_b=speaker_b,
+            )
+            extracted.extend(session_memories)
+            self.updater.update(self.store, session_memories)
+
+        before_reflection_active = len(self.store.active_memories())
+        reflections = self.reflector.reflect(self.store.active_memories())
+        self.store.add_many(reflections)
+
+        active_count = len(self.store.active_memories())
+        obsolete_count = len(self.store.memories) - active_count
+        self._write_log(
+            {
+                "event": "ingest",
+                "agent": "UpdateReflectionAgent",
+                "speaker_a": speaker_a,
+                "speaker_b": speaker_b,
+                "num_sessions": len(conversation.get("sessions", [])),
+                "num_extracted_memories": len(extracted),
+                "num_reflections": len(reflections),
+                "num_active_before_reflection": before_reflection_active,
+                "num_stored_memories": len(self.store.memories),
+                "num_active_memories": active_count,
+                "num_obsolete_memories": obsolete_count,
+                "update_stats": self.updater.stats,
+                "reflections": reflections,
                 "update_events": self.updater.events,
                 "memories": self.store.memories,
             }
